@@ -1,199 +1,409 @@
-<!DOCTYPE HTML>
-<html>
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
   
   <title>Hexo</title>
 
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
   
-  <meta name="author" content="John Doe">
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
-  
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   
-
-  <meta property="og:site_name" content="Hexo"/>
-
-  
-  <meta property="og:image" content="/favicon.ico"/>
-  
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 
 <body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">Hexo</a>
-    </h1>
-    <p class="site-description"></p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
-      
-    </ul>
-  </nav>
-</header>
-
-    <main class="site-main posts-loop">
-    
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2024/07/05/hello-world/"><span>Hello World</span></a></h3>
-    
   
 
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2024/07/05/hello-world/" rel="bookmark">
-        <time class="entry-date published" datetime="2024-07-05T11:04:13.498Z">
-          2024-07-05
-        </time>
-      </a>
-    </span>
-  </div>
+  <header>
+    
 
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
 
-  
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
     </div>
-
   </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2019/11/21/笔记/"><span>ORB-SLAM2代码学习笔记-Tracking线程</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2019/11/21/笔记/" rel="bookmark">
-        <time class="entry-date published" datetime="2019-11-21T05:44:57.000Z">
-          2019-11-21
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h2 id="ORB-SLAM2代码学习笔记-Tracking线程"><a href="#ORB-SLAM2代码学习笔记-Tracking线程" class="headerlink" title="ORB-SLAM2代码学习笔记-Tracking线程"></a>ORB-SLAM2代码学习笔记-Tracking线程</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">hello_world</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><code>python</code> 你知道</p>
-<p><em>斜体文本</em><br><em>斜体文本</em><br><strong>粗体文本</strong><br><strong>粗体文本</strong><br><em><strong>粗斜体文本</strong></em><br><em><strong>粗斜体文本</strong></em></p>
-<ul>
-<li>列表项1</li>
-<li>列表项2</li>
-<li>列表项3</li>
-</ul>
-<ol>
-<li>列表项1</li>
-<li>列表项2</li>
-<li>列表项3</li>
-</ol>
-<hr>
-<h3 id="Frame类"><a href="#Frame类" class="headerlink" title="Frame类"></a>Frame类</h3><h4 id="isInFrustum成员函数：用于判断地图点是否在当前相机视野内"><a href="#isInFrustum成员函数：用于判断地图点是否在当前相机视野内" class="headerlink" title="isInFrustum成员函数：用于判断地图点是否在当前相机视野内"></a><code>isInFrustum</code>成员函数：用于判断地图点是否在当前相机视野内</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">以下为伪代码</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">Frame::isInFrustum</span><span class="params">(MapPoint *pMP, <span class="type">float</span> viewingCosLimit)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    P = pMP-&gt;<span class="built_in">GetWorldPos</span>(); <span class="comment">//世界坐标</span></span><br><span class="line">    cv::Mat Pc = mRcw*P+mtcw;  <span class="comment">//相机坐标</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(PcZ&lt;<span class="number">0.0f</span>) <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//1.深度值需要为正</span></span><br><span class="line"></span><br><span class="line">    <span class="type">const</span> <span class="type">float</span> invz = <span class="number">1.0f</span>/PcZ;			</span><br><span class="line">    <span class="type">const</span> <span class="type">float</span> u=fx*PcX*invz+cx;			</span><br><span class="line">    <span class="type">const</span> <span class="type">float</span> v=fy*PcY*invz+cy;</span><br><span class="line">    <span class="keyword">if</span>(u&lt;mnMinX || u&gt;mnMaxX) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span>(v&lt;mnMinY || v&gt;mnMaxY) <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//2.在图像内才可继续</span></span><br><span class="line"></span><br><span class="line">    <span class="type">const</span> cv::Mat PO = P-mOw;  <span class="comment">//mOw为相机光心坐标</span></span><br><span class="line">    <span class="type">const</span> <span class="type">float</span> dist = cv::<span class="built_in">norm</span>(PO); <span class="comment">//取模就得到了距离</span></span><br><span class="line">    <span class="keyword">if</span>(dist&lt;minDistance || dist&gt;maxDistance)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//3.如果不在有效距离范围内，认为投影不可靠</span></span><br><span class="line"></span><br><span class="line">    cv::Mat Pn = pMP-&gt;<span class="built_in">GetNormal</span>();<span class="comment">//平均观测方向</span></span><br><span class="line">    <span class="type">float</span> viewCos = PO.<span class="built_in">dot</span>(Pn)/dist; <span class="comment">//两个单位向量做点积，得到夹角余弦值</span></span><br><span class="line">    <span class="keyword">if</span>(viewCos&lt;viewingCosLimit) <span class="keyword">return</span> <span class="literal">false</span>; <span class="comment">//4.如果小于60度不要了</span></span><br><span class="line"></span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> nPredictedLevel = pMP-&gt;<span class="built_in">PredictScale</span>(dist,<span class="keyword">this</span>);<span class="comment">//根据到光心距离计算一个尺度</span></span><br><span class="line">    <span class="comment">//笔记：根据这个函数可以推断，ORB-SLAM2的尺度是和距离相关的，地图点距离越近，尺度越大</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//记录参数</span></span><br><span class="line">    <span class="comment">// 通过置位标记 MapPoint::mbTrackInView 来表示这个地图点要被投影 </span></span><br><span class="line">    pMP-&gt;mbTrackInView = <span class="literal">true</span>;	</span><br><span class="line">    <span class="comment">// 该地图点投影在当前图像（一般是左图）的像素横坐标</span></span><br><span class="line">    pMP-&gt;mTrackProjX = u;	</span><br><span class="line">    <span class="comment">// bf/z其实是视差，相减得到右图（如有）中对应点的横坐标</span></span><br><span class="line">    pMP-&gt;mTrackProjXR = u - mbf*invz; </span><br><span class="line">	<span class="comment">// 该地图点投影在当前图像（一般是左图）的像素纵坐标									</span></span><br><span class="line">    pMP-&gt;mTrackProjY = v;				</span><br><span class="line">    <span class="comment">// 根据地图点到光心距离，预测的该地图点的尺度层级</span></span><br><span class="line">    pMP-&gt;mnTrackScaleLevel = nPredictedLevel;		</span><br><span class="line">    <span class="comment">// 保存当前相机指向地图点向量和地图点的平均观测方向夹角的余弦值</span></span><br><span class="line">    pMP-&gt;mTrackViewCos = viewCos;					</span><br><span class="line">    <span class="comment">//执行到这里说明这个地图点在相机的视野中并且进行重投影是可靠的，返回true</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="GetFeaturesInArea成员函数：用于根据地图点筛选图像中对应的特征点"><a href="#GetFeaturesInArea成员函数：用于根据地图点筛选图像中对应的特征点" class="headerlink" title="GetFeaturesInArea成员函数：用于根据地图点筛选图像中对应的特征点"></a><code>GetFeaturesInArea</code>成员函数：用于根据地图点筛选图像中对应的特征点</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">以下为伪代码</span><br><span class="line"><span class="function">vector&lt;<span class="type">size_t</span>&gt; <span class="title">Frame::GetFeaturesInArea</span><span class="params">(<span class="type">const</span> <span class="type">float</span> &amp;x, <span class="type">const</span> <span class="type">float</span>  &amp;y, <span class="type">const</span> <span class="type">float</span>  &amp;r, <span class="type">const</span> <span class="type">int</span> minLevel, <span class="type">const</span> <span class="type">int</span> maxLevel)</span> <span class="type">const</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    vector&lt;<span class="type">size_t</span>&gt; vIndices;<span class="comment">//存储结果</span></span><br><span class="line">    </span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> nMinCellX = <span class="built_in">max</span>(<span class="number">0</span>,(<span class="type">int</span>)<span class="built_in">floor</span>( (x-mnMinX-r)*mfGridElementWidthInv));<span class="comment">//计算左边界的格子坐标（mfGridElementWidthInv表示每个像素等于几个网格）</span></span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> nMaxCellX = <span class="built_in">min</span>((<span class="type">int</span>)FRAME_GRID_COLS<span class="number">-1</span>, (<span class="type">int</span>)<span class="built_in">ceil</span>((x-mnMinX+r)*mfGridElementWidthInv));</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> nMinCellY = <span class="built_in">max</span>(<span class="number">0</span>,(<span class="type">int</span>)<span class="built_in">floor</span>((y-mnMinY-r)*mfGridElementHeightInv));</span><br><span class="line">    <span class="type">const</span> <span class="type">int</span> nMaxCellY = <span class="built_in">min</span>((<span class="type">int</span>)FRAME_GRID_ROWS<span class="number">-1</span>,(<span class="type">int</span>)<span class="built_in">ceil</span>((y-mnMinY+r)*mfGridElementHeightInv));</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> ix = nMinCellX; ix&lt;=nMaxCellX; ix++)<span class="comment">//遍历所有可能的格子</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> iy = nMinCellY; iy&lt;=nMaxCellY; iy++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">const</span> vector&lt;<span class="type">size_t</span>&gt; vCell = mGrid[ix][iy];<span class="comment">//获取格子中的特征点索引</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="type">size_t</span> j=<span class="number">0</span>, jend=vCell.<span class="built_in">size</span>(); j&lt;jend; j++)<span class="comment">//遍历可能的特征点</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="type">const</span> cv::KeyPoint &amp;kpUn = mvKeysUn[vCell[j]];</span><br><span class="line">                <span class="keyword">if</span>(kpUn.octave&lt;minLevel)    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span>(kpUn.octave&gt;maxLevel)    <span class="keyword">continue</span>;<span class="comment">//验证特征点金字塔层级是否合法</span></span><br><span class="line">                <span class="type">const</span> <span class="type">float</span> distx = kpUn.pt.x-x;</span><br><span class="line">                <span class="type">const</span> <span class="type">float</span> disty = kpUn.pt.y-y;</span><br><span class="line">                <span class="keyword">if</span>(distx*distx + disty*disty &lt; r*r) <span class="comment">// 最后验证一下距离是否在圆形搜索区域内</span></span><br><span class="line">                    vIndices.<span class="built_in">push_back</span>(vCell[j]);</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> vIndices;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="ORBmatcher类"><a href="#ORBmatcher类" class="headerlink" title="ORBmatcher类"></a>ORBmatcher类</h3><h4 id="SearchByProjection成员函数"><a href="#SearchByProjection成员函数" class="headerlink" title="SearchByProjection成员函数"></a><code>SearchByProjection</code>成员函数</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">以下为伪代码</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">ORBmatcher::SearchByProjection</span><span class="params">(Frame &amp;F, <span class="type">const</span> vector&lt;MapPoint*&gt; &amp;vpMapPoints, <span class="type">const</span> <span class="type">float</span> th)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">size_t</span> iMP=<span class="number">0</span>; iMP&lt;vpMapPoints.<span class="built_in">size</span>(); iMP++)<span class="comment">//遍历有效地图点</span></span><br><span class="line">    &#123;</span><br><span class="line">        MapPoint* pMP = vpMapPoints[iMP];</span><br><span class="line">        <span class="keyword">if</span>(!pMP-&gt;mbTrackInView)    <span class="keyword">continue</span>;<span class="comment">//这个是判断地图点可见性</span></span><br><span class="line">        <span class="keyword">if</span>(pMP-&gt;<span class="built_in">isBad</span>())    <span class="keyword">continue</span>;<span class="comment">//这个应该是局部建图线程操作的</span></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-
-<nav class="pagination">
-  
-  
 </nav>
-    </main>
 
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    </br>
-    
-    &copy; 2024 John Doe
-    
-  </p>
-</footer>
-    
-    
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
   </div>
 </div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/07/05/hello-world/" target="_self">
+          Hello World
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/07/05/hello-world/" target="_self">
+        <div>
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-07-05 19:04" pubdate>
+              2024-07-05
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2019/11/21/%E7%AC%94%E8%AE%B0/" target="_self">
+          ORB-SLAM2代码学习笔记-Tracking线程
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2019/11/21/%E7%AC%94%E8%AE%B0/" target="_self">
+        <div>
+          ORB-SLAM2代码学习笔记-Tracking线程123def hello_world():    print(&quot;Hello, world!&quot;) python 你知道 斜体文本斜体文本粗体文本粗体文本粗斜体文本粗斜体文本  列表项1 列表项2 列表项3   列表项1 列表项2 列表项3   Frame类isInFrustum成员函数：用于判断地图点是否在当前相机视野内1234
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-11-21 13:44" pubdate>
+              2019-11-21
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
