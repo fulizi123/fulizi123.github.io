@@ -19,21 +19,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="loss.backward()和优化器更新参数loss.backward()用于自动求导的函数，它的主要作用是计算损失函数对模型参数的梯度，从而实现反向传播算法。在深度学习中，我们通常使用梯度下降算法来更新模型参数，使得模型能够逐步逼近最优解。在梯度下降算法中，我们需要计算损失函数关于模型参数的梯度，以便确定参数更新的方向和大小。这个计算过程就是反向传播算法，而 loss.backward() 就">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2024/07/05/hello-world/index.html">
+<meta property="og:title" content="Pytorch学习笔记">
+<meta property="og:url" content="http://example.com/2024/09/25/Pytorch%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="loss.backward()和优化器更新参数loss.backward()用于自动求导的函数，它的主要作用是计算损失函数对模型参数的梯度，从而实现反向传播算法。在深度学习中，我们通常使用梯度下降算法来更新模型参数，使得模型能够逐步逼近最优解。在梯度下降算法中，我们需要计算损失函数关于模型参数的梯度，以便确定参数更新的方向和大小。这个计算过程就是反向传播算法，而 loss.backward() 就">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-07-05T11:04:13.498Z">
-<meta property="article:modified_time" content="2024-07-05T11:04:13.498Z">
+<meta property="article:published_time" content="2024-09-25T02:00:00.000Z">
+<meta property="article:modified_time" content="2024-09-25T12:40:26.811Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - Hexo</title>
+  <title>Pytorch学习笔记 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="Pytorch学习笔记"></span>
           
         </div>
 
@@ -210,8 +210,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-05 19:04" pubdate>
-          2024年7月5日 晚上
+        <time datetime="2024-09-25 10:00" pubdate>
+          2024年9月25日 上午
         </time>
       </span>
     
@@ -222,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          18 字
+          1.1k 字
         
       </span>
     
@@ -233,7 +233,7 @@
         
         
         
-          1 分钟
+          9 分钟
         
       </span>
     
@@ -270,25 +270,29 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">Pytorch学习笔记</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <h2 id="loss-backward-和优化器更新参数"><a href="#loss-backward-和优化器更新参数" class="headerlink" title="loss.backward()和优化器更新参数"></a>loss.backward()和优化器更新参数</h2><h3 id="loss-backward"><a href="#loss-backward" class="headerlink" title="loss.backward()"></a>loss.backward()</h3><p>用于自动求导的函数，它的主要作用是计算损失函数对模型参数的梯度，从而实现反向传播算法。在深度学习中，我们通常使用梯度下降算法来更新模型参数，使得模型能够逐步逼近最优解。在梯度下降算法中，我们需要计算损失函数关于模型参数的梯度，以便确定参数更新的方向和大小。这个计算过程就是反向传播算法，而 loss.backward() 就是反向传播算法的实现。</p>
+<p>具体来说，loss.backward() 的作用是对损失函数进行求导，得到每个模型参数关于损失函数的梯度。这个梯度可以表示模型参数在当前状态下对损失函数的贡献大小和方向，即参数更新的方向和大小。通过梯度下降算法，我们可以根据这个梯度调整模型参数，使得损失函数逐渐减小，模型性能逐渐提升。</p>
+<p>需要注意的是，loss.backward() 仅计算当前批次中的梯度，并不修改模型参数。如果需要更新模型参数，还需要调用优化器的 step() 方法，根据计算得到的梯度更新模型参数。</p>
+<p>这一步会计算所有变量x的梯度值：$\frac{\delta loss}{\delta x}$，并将其累积为$x \times grad$ 所用，即$x \times grad &#x3D; (x \times grad)_pre + \frac{\delta loss}{\delta x}$</p>
+<hr>
+<h3 id="loss-backward-1"><a href="#loss-backward-1" class="headerlink" title="loss.backward()"></a>loss.backward()</h3><p>用于更新梯度的函数。当我们使用 backward() 计算网络参数的梯度后，我们需要使用 optimizer.step() 来根据梯度更新网络参数的值。</p>
+<p>具体来说，optimizer.step() 根据优化算法的规则，将梯度应用于网络参数。例如，常用的优化算法如 Adam、SGD 等，都有自己的更新规则，optimizer.step() 会按照相应的规则更新网络参数的值。更新后的参数将被用于下一次的前向传递计算和反向传播计算。</p>
+<h3 id="optimizer-zero-grad"><a href="#optimizer-zero-grad" class="headerlink" title="optimizer.zero_grad()"></a>optimizer.zero_grad()</h3><p>用于清空优化器中的梯度。通常，在进行一次反向传播计算之前，我们需要先清空优化器中的梯度。具体来说，optimizer.zero_grad() 会将优化器中所有可学习参数的梯度设为 0。这样，在下一次前向传递计算和反向传播计算时，之前的梯度就不会对当前的梯度产生影响。</p>
+<hr>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs Python"><span class="hljs-keyword">import</span> torch<br> <br><span class="hljs-comment"># 初始化参数值x</span><br>x = torch.tensor([<span class="hljs-number">1.</span>, <span class="hljs-number">2.</span>], requires_grad=<span class="hljs-literal">True</span>)<br> <br><span class="hljs-comment"># 模拟网络运算，计算输出值y</span><br>y = <span class="hljs-number">100</span>*x<br><br><span class="hljs-comment"># 定义优化器</span><br>optim = torch.optim.SGD([x], lr = <span class="hljs-number">0.001</span>) <span class="hljs-comment"># SGD, lr = 0.001</span><br><br><span class="hljs-comment"># 清空梯度</span><br>optim.zero_grad()<br><br><span class="hljs-comment"># 定义损失</span><br>loss = y.<span class="hljs-built_in">sum</span>() <br> <br><span class="hljs-comment"># 进行反向传播</span><br>loss.backward()  <span class="hljs-comment"># 计算梯度grad, 更新 x*grad    </span><br>  <br>optim.step()  <span class="hljs-comment"># 更新x</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<hr>
+<h2 id="PyTorch：-train-和-eval-模式"><a href="#PyTorch：-train-和-eval-模式" class="headerlink" title="PyTorch：.train() 和 .eval() 模式"></a>PyTorch：.train() 和 .eval() 模式</h2><p>PyTorch 作为一个广泛使用的深度学习框架，在训练和推理时提供了两种主要的模型模式：.train() 和 .eval()。</p>
+<p>在 PyTorch 中，使用 model.eval() 的主要目的是通知模型进入评估模式。这对于某些特定类型的层是非常重要的，比如 BatchNorm 和 Dropout 层，它们在训练和评估阶段的行为是不同的。要注意的是：model.eval() 模式并不会影响梯度的计算。PyTorch 仍会计算梯度，除非你使用 with torch.no_grad(): 上下文管理器。所以，如果你在 .eval() 模式下调用 .backward()，梯度会被计算。(网络上普遍的关于调用.eval()后只计算梯度，不进行反向传播的说法是有问题的，因为.eval()和.train()和反向传播没有关系，是否进行反向传播取决于有没有调用.backward())</p>
+<p>在没有特殊层（如 BN 和 Dropout）的情况下，.train() 和 .eval() 模式下的训练结果完全一致。这表明在这种特定情境下，两种模式下的模型行为并没有区别。</p>
+<p><strong>但是由于大部分网络结构包含BatchNorm 和 Dropout 层，所以网络推理时记得把模式设置为.eval() 模式，且不需要进行反向传播更新梯度，所以可以用with torch.no_grad():</strong></p>
+<hr>
+<h2 id="模型从pytorch转换到onnx格式"><a href="#模型从pytorch转换到onnx格式" class="headerlink" title="模型从pytorch转换到onnx格式"></a>模型从pytorch转换到onnx格式</h2>
                 
               </div>
             
@@ -305,8 +309,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2024/07/05/hello-world/</div>
+      <div>Pytorch学习笔记</div>
+      <div>http://example.com/2024/09/25/Pytorch笔记/</div>
     </div>
     <div class="license-meta">
       
@@ -318,7 +322,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年7月5日</div>
+          <div>2024年9月25日</div>
         </div>
       
       
@@ -350,15 +354,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/09/25/Pytorch%E7%AC%94%E8%AE%B0/" title="Pytorch学习笔记">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Pytorch学习笔记</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2024/07/05/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
